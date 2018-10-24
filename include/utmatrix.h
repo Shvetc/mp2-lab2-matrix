@@ -43,13 +43,7 @@ public:
 	TVector  operator+(const TVector &v);     // сложение
 	TVector  operator-(const TVector &v);     // вычитание
 	ValType  operator*(const TVector &v);     // скалярное произведение
-	void print()
-	{
-		std::cout << "\nvector: \n";
-		for(int i = 0; i < Size - StartIndex; i++)
-			std::cout << pVector[i] << " ";
-		std::cout << "\n";
-	}
+	
 	// ввод-вывод
 	friend istream& operator>>(istream &in, TVector &v)
 	{
